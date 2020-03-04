@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="survey-page">
+  <header class="header">
+    <h1 id="title" class="text-center">Best Food Survey Form</h1>
+    <p id="description" class="text-center description">Here you can help us to improve out restaurant</p>
+  </header>
+  <form id="survey-form">
+    <div class="form-element">
+      <label id="name-label"
+             for="name">Name</label>
+      <input type="text"
+             id="name"
+             name="name"
+             class="form-input"
+             placeholder="enter your name"
+             required/>
+    </div>
+    <div class="form-element">
+      <label id="email-label"
+             for="email">Email</label>
+      <input type="email"
+             id="email"
+             name="email"
+             class="form-input"
+             placeholder="enter your email"
+             required/>
+    </div>
+    <div class="form-element">
+      <label id="number-label"
+             for="number">Age<span class="clue">(optional)</span></label>
+      <input type="number"
+             id="number"
+             name="age"
+             min="10"
+             max="99"
+             class="form-input"
+             placeholder="age"
+             required/>
+    </div>  
+    <div class="form-element">
+      <p>Which option best describes your role?</p>
+      <select id="dropdown" name="role" class="form-input" required>
+        <option disabled selected value>Select current role</option>
+        <option value="student">Student</option>
+        <option value="job">Full Time Job</option>
+        <option value="learner">Full Time Learner</option>
+        <option value="preferNoSay">Prefer Not to Say</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+     <div class="form-element">
+       <p>Whould you recommend our restaurant to a friends?</p>
+       <label>
+         <input 
+          type="radio"
+          name="user-recommend"
+          value="definitely" 
+          class="input-radio"
+          checked/>Definitely
+       </label>
+       <label>
+         <input 
+          type="radio"
+          name="user-recommend"
+          value="maybe" 
+          class="input-radio"
+          />Maybe
+       </label>
+       <label>
+         <input 
+          type="radio"
+          name="user-recommend"
+          value="not-sure" 
+          class="input-radio"
+          />Not Sure
+       </label>
+    </div>
+    <div class="form-element">
+      <p>What is your favourite dish in our restaurant?</p>
+      <select id="most-like" name="mostLike" class="form-input" required>
+        <option disabled selected value>Select an dish</option>
+        <option value="pizza">Pizza</option>
+        <option value="pizza">Pasta</option>
+        <option value="pizza">Steak</option>
+      </select>
+    </div>
+    <div class="form-element">
+      <p>What would you like to see better?<span class="clue">(Check all that apply)</span></p>
+      <label>
+        <input type="checkbox"
+               name="prefer"
+               value="cooking"
+               class="input-checkbox"/>
+      Cooking</label>
+      <label>
+        <input type="checkbox"
+               name="prefer"
+               value="service"
+               class="input-checkbox"/>
+      Service</label>
+      <label>
+        <input type="checkbox"
+               name="prefer"
+               value="stuff"
+               class="input-checkbox"/>
+      Stuff</label>
+       <label>
+        <input type="checkbox"
+               name="prefer"
+               value="prices"
+               class="input-checkbox"/>
+      Prices</label>
+    </div>
+    <div class="form-element">
+      <p>Any comments or suggestions?</p>
+      <textarea id="comments"
+                class="input-textarea"
+                name="comment"
+                placeholder="Enter your suggestions here..."></textarea>
+    </div>
+    <div class="form-element">
+      <button type="submit" id="submit" class="submit-button">
+      Submit</button>
+    </div>  
+  </form>
+</div>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+</body>
+</html>
